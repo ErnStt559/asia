@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Asian Imbiss</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Willkommen bei Mein Asian Imbiss</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menü</a></li>
+                <li><a href="#location">Standort</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="hero-image.jpg" alt="Delicious Asian Food" />
+            <div class="hero-text">
+                <h2>Erleben Sie authentische asiatische Küche</h2>
+                <p>Leckere Gerichte, frisch zubereitet mit hochwertigen Zutaten.</p>
+            </div>
+            <div class="hero-extra">
+                <h3>Besondere Angebote</h3>
+                <p>Genießen Sie unsere täglichen Spezialitäten und Rabatte!</p>
+                <button onclick="location.href='#menu'">Jetzt ansehen</button>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Menü</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <div class="menu-background">
+                    <img src="fruehlingsrollen.jpg" alt="Frühlingsrollen">
+                    <h3>Frühlingsrollen</h3>
+                    <p>€5</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-background">
+                    <img src="pad_thai.jpg" alt="Pad Thai">
+                    <h3>Pad Thai</h3>
+                    <p>€8</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-background">
+                    <img src="teriyaki_hähnchen.jpg" alt="Teriyaki Hähnchen">
+                    <h3>Teriyaki Hähnchen</h3>
+                    <p>€10</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-background">
+                    <img src="sushi_platte.jpg" alt="Sushi-Platte">
+                    <h3>Sushi-Platte</h3>
+                    <p>€15</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-background">
+                    <img src="gruener_tee.jpg" alt="Grüner Tee">
+                    <h3>Grüner Tee</h3>
+                    <p>€2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <section id="contact">
+        <h2>Kontaktieren Sie uns</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mein Asian Imbiss. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

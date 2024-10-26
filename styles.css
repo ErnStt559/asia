@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+
+header {
+    background-color: #333;
+    color:white;
+    padding: 1em 0;
+    text-align: center;
+}
+header h1 {
+    font-size: 2em;
+    color: whitesmoke;
+    overflow: hidden; /* Скрываем текст, чтобы создать эффект появления */
+    white-space: nowrap; /* Устанавливаем текст в одну строку */
+    border-right: 0.15em solid #333; /* Эффект курсора */
+    animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: khaki;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    background-color:gray;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column; /* Вертикальная ориентация */
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: center; /* Центрирование по вертикали */
+    text-align: center; /* Центрирование текста */
+    padding: 40px 20px; /* Отступы сверху и снизу */
+    background-color:black; /* Цвет фона */
+}
+
+.hero-content {
+    max-width: 1800px; /* Максимальная ширина содержимого */
+}
+
+.hero-content img {
+    max-width: 100%; /* Адаптивная ширина изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 8px; /* Скругление углов изображения */
+}
+
+.hero-extra {
+    background-color: grey;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.hero-extra h3 {
+    margin-bottom: 10px;
+}
+
+.hero-extra button {
+    background-color: #FF5722; /* Цвет кнопки */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-extra button:hover {
+    background-color: #E64A19; /* Цвет кнопки при наведении */
+}
+
+#menu {
+    text-align: center; /* Центрирование текста */
+    padding: 40px 20px; /* Отступы */
+}
+
+.menu-items {
+    display: flex; /* Использование Flexbox */
+    flex-direction: column; /* Вертикальная ориентация */
+    align-items: center; /* Центрирование по горизонтали */
+}
+
+.menu-item {
+    margin: 20px 0; /* Отступы между блюдами */
+    max-width: 300px; /* Максимальная ширина для каждого блюда */
+    text-align: center; /* Центрирование текста внутри каждого элемента меню */
+}
+
+.menu-item img {
+    max-width: 100%; /* Адаптивная ширина изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 8px; /* Скругление углов изображения */
+}
+#hero {
+    position: relative;
+    text-align: center;
+}
+
+
+#menu {
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url('background.jpg'); /* Укажите путь к вашему изображению */
+    background-size: cover; /* Масштабируем изображение по размеру секции */
+    background-position: center;
+    color: #fff; /* Цвет текста для лучшей видимости */
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    margin: 20px 0;
+    max-width: 300px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный фон для текста */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item h3, .menu-item p {
+    color: #fff;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Анимация мигания курсора */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #333; }
+}      
+
+
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('hero-image.jpg'); /* Укажите путь к вашему изображению */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero-text {
+    position: absolute;
+    left: calc(50% - 800px); /* Смещаем текст на 1000 пикселей левее от центра */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный фон для улучшения читабельности текста */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-text h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
